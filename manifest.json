@@ -1,0 +1,25 @@
+{
+	"files": {
+		"config/abnormalities.js": "459749c4d324d78e62f1ba888312400b3461a40f0a58717fe6990e1290d9e181",
+		"config/skills.js": "633365e0678ae7095365373b127d68e8bd570781874951acc84804ca1e248272",
+		"lib/abnormalities.js": "7ceb385ba9a3f85bf1e186469908d6dcfa16c1de8a078f329079e1a5e1dd4ba9",
+		"lib/commands.js": "5195fdcbcf66ce26c5c07916df678a5dfc0cdc2ecbbf067f073fd0ac17c8e0df",
+		"lib/cooldowns.js": "d0d055bd6a8a45d4dfe10e1c7e7802e39a2c8eab01d111d087768d587a7c5f2d",
+		"lib/core.js": "814042f9d9b1f526c09b18cb036938437a230b6afcce2bdbe8ed12b924241b7b",
+		"lib/debug.js": "e588440fd11eb3d7eb84b15789df92b7f15d9d560ec2f7ef8597c384e402efb7",
+		"lib/index.js": "5a2371cbbdd14829ff6c584918de8f1690130564847269d8145e12687d01d701",
+		"lib/ping.js": "edb02ec9d5a58e216c97ec43cb6fdbaac9bd803c521da7d79eee84d272e66426",
+		"lib/player.js": "97b5a73b84816a421db1980e0b8dea0e73a90a697c8a03c80c3500d5e89f109d",
+		"lib/require.js": "d8fcd57f21ba1cea3d474688c994804b21676c6a4cb6a9dbc4ed929c79a37dac",
+		"migration.js": "bc568f350c82dd15c095e431fe6aba7ade53a4771e1bca413fe058abc955cc6a",
+		"module.json": "15c72466a515fb8bfdfab08c3a18a5212d172995a8bb3543b516f19882177758",
+		"package.json": "f661f14ae53eeae6bdc3f0679f27ce4d336907649eca15eba6725703a01fb0a9",
+		"client_data/abnormality.json": "d2b4aab09677d0059fae5855546e98fba90d08edb2bc16dc81911ba0df3d11b2",
+		"client_data/ep.json": "c853bc7b2672d94134243269b334983ba44a288cec248653796d69bf28535748",
+		"client_data/noctan.json": "b7bf4bc91a06ee3563fd839622551894070e8d3d987973e07bbe7c9a71a4b5b3",
+		"client_data/passivity.json": "71d14e07391fdc146fbe7822d8a710497cf4a7959f1e27ebca634493f478d5e7",
+		"client_data/polishing.json": "0c96e135535b1ee6bcc04407d81cf50552ce2eca23ebeeea31ffe5531776098e",
+		"client_data/skills.json": "e09a392aa96dcd06efb415314d8528da2c18c39f75721471725231d85ea2f235",
+		"client_data/ep_pog.json": "8e248abde791064b8434b7711e5a22de4bd59c7309ec49dfee8a2745c4f906af"
+	}
+}
