@@ -343,6 +343,7 @@ module.exports = {
 			'*': {
 				noInterrupt: [3, 4, 8, 9, 10, 11, 12, 13, 15, 21, 23, 24, 25, 26, 27, 28, 29],
 				abnormals: { 22060: { speed: 1.25 } },
+                cooldownEnd: 300,
 				categoryChains: {
 					2001: 30,
 					2005: 30,
@@ -388,7 +389,7 @@ module.exports = {
 		8: { // Shield Counter
 			0: {
 				longRetry: true,
-				forceDelay: 5,
+				forceDelay: 15,
 				noInterrupt: [8],
 				cooldownEnd: 300,
 				onlyDefenceSuccess: true
@@ -423,7 +424,8 @@ module.exports = {
 		13: { // Spring Attack
 			'*': {
 				triggerAbnormal: { 201831: 2000 },
-				consumeAbnormalEnd: 201831
+				consumeAbnormalEnd: 201831,
+                cooldownEnd: 300
 			},
 			0: {
 				noInterrupt: ['1-0', '1-1', 3, 4, 9, 11, 12, 13, 15, 23, 24, 25, 26, 27, 28, 29],
@@ -1161,6 +1163,7 @@ module.exports = {
 			}
 		},
 		4: { // Arcane Pulse
+            '*': { forceDelay: 15 },
 			0: {
 				noInterrupt: [4],
 				abnormals: { 25140: { chargeSpeed: 0.3 } }
@@ -1320,6 +1323,7 @@ module.exports = {
 			50: true
 		},
 		33: { // Arcane Pulse (Mana Boost)
+            '*': { forceDelay: 15 },
 			10: true,
 			11: true,
 			12: true,
