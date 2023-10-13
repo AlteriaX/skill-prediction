@@ -813,9 +813,7 @@ module.exports = {
 			'*': { abnormals: { 24170: { speed: 1.25 } } },
 			0: {
 				consumeAbnormal: 400900,
-				noInterrupt: [3, 10, 15],
 				overcharge: 450,
-				cooldownEnd: 500,
 				abnormals: {
 					24130: { chargeSpeed: 0.3 },
 					24170: { speed: 1.25 },
@@ -825,10 +823,10 @@ module.exports = {
 					401150: { chargeSpeed: 0.2 }
 				}
 			},
-			10: { noInterrupt: ['3-10', 18, 25] },
-			11: { noInterrupt: ['3-11', 18, 25] },
-			12: { noInterrupt: ['3-12', 18, 25] },
-			13: { noInterrupt: ['3-13', 18, 25] }
+			10: { noInterrupt: ['3-10'] },
+			11: { noInterrupt: ['3-11'] },
+			12: { noInterrupt: ['3-12'] },
+			13: { noInterrupt: ['3-13'] }
 		},
 		4: { // Flatten
 			'*': {
@@ -898,7 +896,6 @@ module.exports = {
 			12: true,
 			13: {
 				noRetry: false,
-				noInterrupt: [18],
 				consumeAbnormal: 401701
 			}
 		},
