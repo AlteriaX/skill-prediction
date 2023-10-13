@@ -1305,10 +1305,10 @@ module.exports = {
 		30: { // Nova
 			0: { noInterrupt: [30, 36] },
 		},
-		/*31: { // Warp Barrier
+		31: { // Warp Barrier
 			10: true,
 			20: true
-		},*/
+		},
 		32: { // Meteor Strike (Mana Boost)
 			'*': {
 				noInterrupt: [6, 32],
