@@ -562,23 +562,33 @@ module.exports = {
 			3: true
 		},
 		2: { // Knockdown Strike
-			'*': { consumeAbnormal: 23220 },
+			'*': {
+				consumeAbnormal: 23220,
+				consumeAbnormalEnd: 23070,
+				abnormals: { 23070: { speed: 1.25 } }
+			},
 			1: true,
 			2: {
-				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, '28-1', '28-2', '28-3', 30, 31],
-				chains: { 14: 30, 27: 30 }
+				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 28],
+				categoryChains: {
+					3014: 30,
+					3027: 30
+				}
 			},
 			30: true
 		},
 		3: { // Whirlwind
+			'*': {
+				abnormals: {
+					23080: { speed: 1.25 },
+					301150: { speed: 1.20 }
+				}
+			},
 			0: true,
 			1: true,
 			2: {
-				interruptAllWithAbnormal: { 301604: 3 },
-				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 28, 30, 31],
-				abnormals: { 301604: { chain: 30 } },
-				chains: { 27: 30 },
-
+				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 24, 28],
+				categoryChains: { 3027: 30 }
 			},
 			30: { requiredBuff: 301604 }
 		},
@@ -586,10 +596,11 @@ module.exports = {
 			'*': {
 				noInterrupt: [4],
 				forceClip: true,
-				hasChains: true
+				noRetry: true,
+				//hasChains: true
 			},
 			0: { abnormalChains: { 301200: 30 } },
-			30: true
+			30: { consumeAbnormal: 301200 }
 		},
 		5: { // Dash
 			0: { ignoreAttackSpeed: true }
@@ -601,24 +612,26 @@ module.exports = {
 			}
 		},
 		8: { // Overhand Strike
+			'*': {
+				//hasChains: true,
+				checkReset: true,
+				cooldownEnd: 700
+			},
 			0: {
-				length: 3375.7,
-				interruptAllWithAbnormal: { 301604: null },
-				noInterrupt: ['1-0', '1-1', '1-2', 4, 6, 8, 10, '14-0', '14-1', 17, 18, 21, 23, 25, 26, '28-1', '28-2', '28-3', 30, 31],
-				abnormals: { 301604: { chain: 30 } },
-				chains: {
-					1: 30,
-					2: 30,
-					3: 30,
-					9: 30,
-					12: 30,
-					13: 30,
-					14: 30,
-					15: 30,
-					16: 30,
-					24: 30,
-					27: 30
-				}
+				noInterrupt: ['1-0', '1-1', '1-2', 4, 6, 10, '14-0', '14-1', 17, 18, 21, 25],
+				categoryChains: {
+					3001: 30,
+                    3002: 30,
+                    3003: 30,
+                    3009: 30,
+                    3012: 30,
+                    3013: 30,
+                    3014: 30,
+                    3015: 30,
+                    3016: 30,
+                    3024: 30,
+                    3027: 30
+                }
 			},
 			30: true
 		},
@@ -626,17 +639,23 @@ module.exports = {
 			0: true
 		},
 		/*10: { // Retaliate
-			0: false
+			0: {
+				noInterrupt: [10],
+				noRetry: true
+			}
 		},*/
 		12: { // Heart Thrust
-			'*': { consumeAbnormalEnd: [23060, 23061] },
+			'*': {
+				abnormals: {
+					23060: { speed: 1.25 },
+					23061: { speed: 1.35 }
+				}
+			},
 			0: true,
 			1: true,
 			2: {
-				interruptAllWithAbnormal: { 301604: 12 },
-				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 28, 30, 31],
-				abnormals: { 301604: { chain: 30 } },
-				chains: { 27: 30 },
+				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 24, 28],
+				categoryChains: { 3027: 30 }
 			},
 			30: { requiredBuff: 301604 }
 		},
@@ -664,20 +683,23 @@ module.exports = {
 		17: { // Headlong Rush
 			0: {
 				ignoreAttackSpeed: true,
-				length: 1000,
-				distance: 413
+				length: 980,
+				distance: 413,
+				cooldownEnd: 300,
+				triggerAbnormal: { 300502: 10000 }
 			}
 		},
 		18: { // Overpower
-			'*': { noInterrupt: [1, 2, 3, 4, 6, 8, 9, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28, 30, 31] },
+			'*': {
+				cooldownEnd: 300,
+				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 12, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 26, 27, 28]
+			},
 			0: true,
 			50: true
 		},
-		/*
 		19: { // Tenacity
 			0: { ignoreAttackSpeed: true }
 		},
-		*/
 		20: { // In Cold Blood
 			0: {
 				ignoreAttackSpeed: true,
@@ -689,367 +711,89 @@ module.exports = {
 			0: true
 		},
 		23: { // Measured Slice
+			'*': { /*hasChains: true*/ },
 			0: {
-				length: 3691.25,
-				interruptAllWithAbnormal: { 301604: 23 },
-				noInterrupt: [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, '28-1', '28-2', '28-3', 30, 31],
-				abnormals: { 301604: { chain: 30 } },
-				chains: {
-					8: 30,
-					24: 30,
-					25: 30,
-					26: 30,
-					27: 30
+				noInterrupt: [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16, 17, 22, 23, 28],
+				categoryChains: {
+					3008: 30,
+					3024: 30,
+					3025: 30,
+					3026: 30,
+					3027: 30
 				}
 			},
 			30: true
-		},
+ 		},
 		24: { // Eviscerate
+			'*': { /*hasChains: true*/ },
 			0: {
-				length: 1941,
-				distance: 50,
-				interruptAllWithAbnormal: { 301604: 24 },
-				noInterrupt: ['1-0', '1-1', '1-2', 4, 6, 10, 14, 16, 17, 18, 21, 22, 23, 24, 26, '28-1', '28-2', '28-3', 30, 31],
-				abnormals: { 301604: { chain: 30 } },
-				chains: {
-					1: 30,
-					2: 30,
-					3: 30,
-					8: 30,
-					9: 30,
-					12: 30,
-					13: 30,
-					15: 30,
-					25: 30,
-					27: 30
+				noInterrupt: ['1-0', '1-1', '1-2', 4, 6, 10, 14, 16, 17, 18, 21, 22, 24, 26, 28],
+				categoryChains: {
+					3001: 30,
+					3002: 30,
+					3003: 30,
+					3008: 30,
+					3009: 30,
+					3012: 30,
+					3013: 30,
+					3015: 30,
+					3025: 30,
+					3027: 30
 				}
 			},
 			30: true
 		},
 		26: { // Punishing Blow
+			'*': { /*hasChains: true*/ },
 			0: {
-				length: [1094, 2166, 115],
-				distance: [40.51, 122.33, 11.21],
-				interruptAllWithAbnormal: { 301604: 26 },
-				noInterrupt: [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 26, '28-1', '28-2', '28-3', 31],
-				abnormals: { 301604: { chain: 30 } },
-				chains: {
-					8: 30,
-					23: 30,
-					24: 30,
-					25: 30,
-					27: 30,
-					'30-11': 30,
-					'30-12': 30,
-					'30-20': 30,
-					'30-21': 30,
-					'30-30': 30,
-					'30-31': 30,
-					'30-39': 30
+				noInterrupt: [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 26, 28],
+				categoryChains: {
+					3008: 30,
+                    3023: 30,
+                    3024: 30,
+                    3025: 30,
+                    3027: 30,
+					3099: 30
 				}
 			},
 			30: true
 		},
 		27: { // Savage Strike
 			'*': {
-				noInterrupt: ['27-30', '27-41', '27-51'],
-				hasChains: true,
-				noRetry: true
-			},
-			0: {
+				noInterrupt: ['27-31'],
+				//hasChains: true,
+				noRetry: true,
 				triggerAbnormal: {
 					301600: 4000,
 					301603: 5000,
-					301604: 2027 // 2000 + 27
-				},
-				abnormals: { 301603: { chain: 30 } },
-				chains: {
-					1: 31,
-					2: 31,
-					3: 31,
-					4: 31,
-					5: 31,
-					6: 31,
-					8: 31,
-					9: 31,
-					10: 31,
-					12: 31,
-					13: 31,
-					14: 31,
-					15: 31,
-					16: 31,
-					17: 31,
-					18: 31,
-					19: 31,
-					20: 31,
-					21: 31,
-					22: 31,
-					23: 31,
-					24: 31,
-					25: 31,
-					26: 31,
-					'28-1': 31,
-					'28-2': 31,
-					'28-3': 31
+					301604: 5000
 				}
 			},
-			30: {
-				length: 627.5,
-				distance: 275.6,
-				consumeAbnormal: [301600, 301603],
-				triggerAbnormal: { 301601: 4000 }
-			},
+			0: { categoryChains: { 9999: 30 } },
+			30: true,
 			31: {
-				length: [1000, 0],
-				distance: [274.8, 0],
-				triggerAbnormal: { 301603: 5000 }
-			},
-			40: {
-				abnormals: { 301603: { chain: 41 } },
-				length: [1000, 0],
-				distance: [274.6, 1],
-				chains: {
-					1: 42,
-					2: 42,
-					3: 42,
-					4: 42,
-					5: 42,
-					6: 42,
-					8: 42,
-					9: 42,
-					10: 42,
-					12: 42,
-					13: 42,
-					14: 42,
-					15: 42,
-					16: 42,
-					17: 42,
-					18: 42,
-					19: 42,
-					20: 42,
-					21: 42,
-					22: 42,
-					23: 42,
-					24: 42,
-					25: 42,
-					26: 42,
-					'28-1': 42,
-					'28-2': 42,
-					'28-3': 42
-				}
-			},
-			41: {
-				length: 627.5,
-				distance: 275.6,
+				consumeAbnormal: [301600, 301603],
 				triggerAbnormal: {
 					301601: 4000,
-					301604: 2027 // 2000 + 27 
-				},
-				consumeAbnormal: [300500, 300501, 300502, 300503, 301600, 301603]
-			},
-			42: {
-				abnormals: { 301603: { chain: 41 } },
-				length: [1000, 0],
-				distance: [274.8, 0]
-			},
-			50: {
-				abnormals: { 301603: { chain: 51 } },
-				length: [1000, 0],
-				distance: [274.6, 1],
-				chains: {
-					1: 52,
-					2: 52,
-					3: 52,
-					4: 52,
-					5: 52,
-					6: 52,
-					8: 52,
-					9: 52,
-					10: 52,
-					12: 52,
-					13: 52,
-					14: 52,
-					15: 52,
-					16: 52,
-					17: 52,
-					18: 52,
-					19: 52,
-					20: 52,
-					21: 52,
-					22: 52,
-					23: 52,
-					24: 52,
-					25: 52,
-					26: 52,
-					'28-1': 52,
-					'28-2': 52,
-					'28-3': 52
+					301604: 4000
 				}
-			},
-			51: {
-				length: 627.5,
-				distance: 275.6,
-				triggerAbnormal: {
-					301601: 4000,
-					301604: 2027 // 2000 + 27 
-				},
-				consumeAbnormal: [300500, 300501, 300502, 300503, 301600, 301603]
-			},
-			52: {
-				abnormals: { 301603: { chain: 51 } },
-				length: [1000, 0],
-				distance: [274.8, 0]
-			},
+			}
 		},
 		28: { // Unsheathe
 			'*': { noRetry: true },
 			0: {
 				chargeLevels: [1, 2, 3],
-				noInterrupt: [28]
+				noInterrupt: [28],
+				abnormals: {
+					301600: { chargeSpeed: 0.4 },
+					301601: { chargeSpeed: 0.6 }
+				},
+				consumeAbnormalEnd: 301500
 			},
-			1: true,
-			2: true,
-			3: true
-		},
-		/*
-		30: { // Rotation Combo
-			10: {
-				type: 'charging',
-				timeRate: 1,
-				length: 1000,
-				perfectCharge: 12,
-				chargeLevels: [11, 11],
-				noInterrupt: 30
-			},
-			11: {
-				length: [875, 2232.5],
-				distance: [50, 10],
-				triggerAbnormal: {
-					302207: 3000,
-					302200: 4000
-				},
-				consumeAbnormal: 302208,
-				consumeAbnormalEnd: 302207
-			},
-			12: {
-				length: [700, 1766],
-				distance: [50, 10],
-				triggerAbnormal: { 
-					302207: 3000,
-					302200: 4000
-				},
-				consumeAbnormal: 302208,
-				consumeAbnormalEnd: 302207
-			},
-			20: {
-				length: [2100, 1766],
-				distance: [165, 19.84],
-				9: {
-					0: { length: [2100, 1900] },
-					5: { length: [2100, 1900] }
-				},
-				triggerAbnormal: { 
-					302207: 3000,
-					302200: 4000,
-					302201: 4000
-				},
-				consumeAbnormal: 302200,
-				consumeAbnormalEnd: [302207, 302208],
-				interruptAllWithAbnormal: { 301604: 30 },
-				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 27, '28-1', '28-2', '28-3', '30-20', '30-21', 31],
-				abnormals: { 301604: { chain: '31-21' } },
-				chains: {
-					26: '30-21',
-					30: '30-21'
-				}
-			},
-			21: {
-				length: [1000, 1328.6],
-				distance: [140, 19.84],
-				9: { 
-					0: { length: [1000, 1357.14] },
-					5: { length: [1000, 1357.14] }
-				},
-				triggerAbnormal: {
-					302207: 3000,
-					302208: 3000,
-					302201: 4000
-				},
-				consumeAbnormal: 302200,
-				consumeAbnormalEnd: [302207, 302208]
-			},
-			30: {
-				length: [2200, 766],
-				distance: [195, 27.73],
-				triggerAbnormal: {
-					302207: 3000,
-					302208: 3000,
-					302202: 4000
-				},
-				consumeAbnormal: 302201,
-				consumeAbnormalEnd: [302202, 302204, 302207, 302208],
-				interruptAllWithAbnormal: { 301604: 30 },
-				noInterrupt: [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 27, '28-1', '28-2', '28-3', '30-30', '30-31', 31],
-				abnormals: { 301604: { chain: '31-31' } },
-				chains: {
-					26: '30-31',
-					30: '30-31'
-				}
-			},
-			31: {
-				length: [1692.3, 566.2],
-				distance: [195, 27.73],
-				triggerAbnormal: {
-					302207: 3000,
-					302208: 3000,
-					302202: 4000
-				},
-				consumeAbnormal: 302201,
-				consumeAbnormalEnd: [302202, 302204, 302207, 302208]
-			},
-			39: { // ?
-				length: 2966,
-				distance: [195, 27.73],
-				triggerAbnormal: {
-					302207: 3000,
-					302208: 3000,
-					302202: 4000
-				},
-				consumeAbnormal: 302201,
-				consumeAbnormalEnd: [302202, 302204, 302207, 302208]
-			}
-		},
-		31: { // Jump Smash
-			0: {
-				type: 'charging',
-				timeRate: 1,
-				length: [1000, 0],
-				perfectCharge: 31,
-				chargeLevels: [30, 30, 30],
-				triggerAbnormal: {
-					302207: 3000,
-					302208: 3000
-				},
-				noInterrupt: 31
-			},
-			30: { // diff?
-				length: [701.3, 2105.26, 1610.5],
-				distance: [36.67, 48.57, 0],
-				triggerAbnormal: { 302207: 3000 },
-				consumeAbnormal: 302208
-			},
-			31: {
-				length: [561.05, 1684.2, 1268.4],
-				distance: [36.67, 48.57, 0],
-				triggerAbnormal: { 
-					302207: 3000,
-					302211: 3000
-				},
-				consumeAbnormal: 302208,
-				consumeAbnormalEnd: 302211
-			}
+			1: { noInterrupt: ['28-1'] },
+			2: { noInterrupt: ['28-2'] },
+			3: { noInterrupt: ['28-3'] }
 		}
-		*/
 	},
 	3: { // Berserker
 		'*': { consumeAbnormal: 401404 },
