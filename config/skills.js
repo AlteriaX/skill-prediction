@@ -2090,7 +2090,7 @@ module.exports = {
 			20: true
 		},
 		41: { // Divine Intervention / Mass Divine Intervention
-			'*': { //noRetry: true },
+			'*': { /*noRetry: true*/ },
 			0: {
 				type: 'lockon',
 				ignoreAttackSpeed: true,
