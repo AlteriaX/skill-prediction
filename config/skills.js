@@ -379,6 +379,7 @@ module.exports = {
 		},
 		8: { // Shield Counter
 			0: {
+				forceDelay: 15,
 				noInterrupt: [8],
 				cooldownEnd: 300,
 				onlyDefenceSuccess: true
@@ -1929,22 +1930,22 @@ module.exports = {
 				type: 'lockon',
 				ignoreAttackSpeed: true,
 				abnormals: { 805800: { disableSkill: true } },
-				//noRetry: true
+				noRetry: true
 			},
 			10: {
 				type: 'lockonCast',
 				level: {
 					29: { // Velocity
 						ignoreAttackSpeed: true,
-						cooldownEnd: 100 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
+						cooldownEnd: 300 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
 					},
 					30: { // Downfall
 						ignoreAttackSpeed: true,
-						cooldownEnd: 100 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
+						cooldownEnd: 300 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
 					},
 					32: { // Heal
 						ignoreAttackSpeed: true,
-						cooldownEnd: 100 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
+						cooldownEnd: 300 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
 					}
 				}
 			}
@@ -2130,18 +2131,18 @@ module.exports = {
 			0: {
 				type: 'lockon',
 				ignoreAttackSpeed: true,
-				//noRetry: true
+				noRetry: true
 			},
 			10: {
 				type: 'lockonCast',
 				level: {
 					29: { // Velocity
 						ignoreAttackSpeed: true,
-						cooldownEnd: 100 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
+						cooldownEnd: 300 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
 					},
 					30: { // Downfall
 						ignoreAttackSpeed: true,
-						cooldownEnd: 100 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
+						cooldownEnd: 300 // Workaround: Fixes ghosting while on CD - TODO: Enable global cooldown checks
 					}
 				}
 			}

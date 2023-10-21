@@ -4,17 +4,17 @@ const DefaultSettings = {
 	skills: {
 		jitterCompensation:		false,
 		retryCount:				1,		//	Number of times to retry each skill (0 = disabled). Recommended 1-3.
-		retryMs:				40,		/*	Time to wait between each retry.
+		retryMs:				60,		/*	Time to wait between each retry.
 											SKILL_RETRY_MS * SKILL_RETRY_COUNT should be under 100, otherwise skills may go off twice.
 										*/
-		longRetryCount:			5,		//	Only used for Warrior: Blade Waltz
+		longRetryCount:			3,		//	Only used for Warrior: Blade Waltz
 		longRetryMs:			80,
 		retryJittercomp:		0,		//	Skills that support retry will be sent this much earlier than estimated by jitter compensation.
 		delayOnFail:			true,	//	Basic initial desync compensation. Useless at low ping (<50ms).
 		chargeJitterMax:		0,		/*	Maximum jitter delay to add to charging skills.
 											Detected network jitter will be capped by this number. Skill-specific jitter is not capped.
 										*/
-		serverTimeout:			500,	/*	This number is added to your maximum ping + skill retry period to set the failure threshold for skills.
+		serverTimeout:			250,	/*	This number is added to your maximum ping + skill retry period to set the failure threshold for skills.
 											If animations are being cancelled while damage is still applied, increase this number.
 										*/
 		forceClipStrict:		false,	/*	Set this to false for smoother, less accurate iframing near walls.
