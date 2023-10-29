@@ -14,7 +14,7 @@ const DefaultSettings = {
 		chargeJitterMax:		0,		/*	Maximum jitter delay to add to charging skills.
 											Detected network jitter will be capped by this number. Skill-specific jitter is not capped.
 										*/
-		serverTimeout:			250,	/*	This number is added to your maximum ping + skill retry period to set the failure threshold for skills.
+		serverTimeout:			300,	/*	This number is added to your maximum ping + skill retry period to set the failure threshold for skills.
 											If animations are being cancelled while damage is still applied, increase this number.
 										*/
 		forceClipStrict:		false,	/*	Set this to false for smoother, less accurate iframing near walls.

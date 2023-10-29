@@ -1312,9 +1312,18 @@ module.exports = {
 				noInterrupt: [4],
 				abnormals: { 25140: { chargeSpeed: 0.3 } }
 			},
-			10: { noInterrupt: ['4-10'] },
-			11: { noInterrupt: ['4-11'] },
-			12: { noInterrupt: ['4-12'] }
+			10: {
+				noInterrupt: ['4-10'],
+				forceDelay: 15
+			},
+			11: {
+				noInterrupt: ['4-11'],
+				forceDelay: 15
+			},
+			12: {
+				noInterrupt: ['4-12'],
+				forceDelay: 15
+			}
 		},
 		5: { // Mana Infusion
 			0: true
@@ -1467,6 +1476,7 @@ module.exports = {
 			50: true
 		},
 		33: { // Arcane Pulse (Mana Boost)
+			'*': { forceDelay: 15 },
 			10: true,
 			11: true,
 			12: true,
