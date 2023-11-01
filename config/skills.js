@@ -2949,12 +2949,13 @@ module.exports = {
 			},
 			30: true
 		},
-		/*20: { // Cable Step
+		20: { // Cable Step
 			0: {
+				forceClip: true,
 				type: 'dynamicDistance',
 				length: 1250
 			}
-		},*/
+		},
 		21: { // Recall Scythes
 			'*': { requiredBuff: 10151221 },
 			0: {
