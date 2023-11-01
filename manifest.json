@@ -1,11 +1,11 @@
 {
 	"files": {
 		"config/abnormalities.js": "459749c4d324d78e62f1ba888312400b3461a40f0a58717fe6990e1290d9e181",
-		"config/skills.js": "fdc03af67c291d1ef04cf5fde73b4d9c7722c85d8c72f072a89ae5969f239537",
+		"config/skills.js": "b95ae26e3a7b26465984fef94d565b40d9cb8d37ab117b01e68b9a9a0fb64194",
 		"lib/abnormalities.js": "9ce11778db28413532b922e29798d642d0fdebaa3eeb50fc2d61777a462b11c6",
 		"lib/commands.js": "5195fdcbcf66ce26c5c07916df678a5dfc0cdc2ecbbf067f073fd0ac17c8e0df",
 		"lib/cooldowns.js": "6614799be9735debd3ea5b6576673a98505f018acb2ca0c2bf682891f9494747",
-		"lib/core.js": "01f49e10a7fcbff41f868543a869bada0220cdbc6adef4f8bf2feee8ebb7feda",
+		"lib/core.js": "508ddf5a334644e695a953d65ec373fc26bc88fabd0142a8f99b95cf4c9af7a3",
 		"lib/debug.js": "e588440fd11eb3d7eb84b15789df92b7f15d9d560ec2f7ef8597c384e402efb7",
 		"lib/index.js": "5a2371cbbdd14829ff6c584918de8f1690130564847269d8145e12687d01d701",
 		"lib/ping.js": "5d4414c2fef96f6526de6518d804348983cc03949d07892b0522f2ec31110300",

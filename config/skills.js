@@ -264,7 +264,7 @@ module.exports = {
 					104110: 2000,
 					104101: 810
 				},
-				noInterrupt: ['41-0', '41-30', 42],
+				noInterrupt: ['40-10', '40-20', '41-0', '41-30', 42],
 				//hasChains: true,
 				longRetry: true,
 				cooldownEnd: 1250,
@@ -2949,12 +2949,12 @@ module.exports = {
 			},
 			30: true
 		},
-		/*20: { // Cable Step
+		20: { // Cable Step
 			0: {
 				type: 'dynamicDistance',
 				length: 1250
 			}
-		},*/
+		},
 		21: { // Recall Scythes
 			'*': { requiredBuff: 10151221 },
 			0: {
