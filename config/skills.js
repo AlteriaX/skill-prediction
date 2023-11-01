@@ -456,11 +456,9 @@ module.exports = {
 			50: true
 		},
 		18: { // Shield Barrage
-			'*': {
-				cooldownEnd: 300,
-				noInterrupt: ['18-0']
-			},
+			'*': { cooldownEnd: 300 },
 			0: {
+				//noInterrupt: [3, 10, 13, '18-0', 21, 25],
 				triggerAbnormal: { 201831: 2000 },
 				abnormals: { 201550: { speed: 1.2 } } 
 			},
@@ -2697,8 +2695,11 @@ module.exports = {
 				}
 			},
 			0: {
-				abnormalChains: { 10151171: 30 },
-				noInterrupt: ['1-0', '1-2', 4, 12, 13, 14, 15, 18, 20, 23, 40],
+				abnormalChains: {
+					10151171: 30,
+					10151010: 32
+				},
+				noInterrupt: ['1-0', '1-2', 4, '5-30', '5-32', 12, 13, 14, 15, 18, 20, 23, 40],
 				interruptibleWithAbnormal: { 10151250: [4, 12, 13, 14, 15, 18, 20, 23, 40] },
 				chains: {
 					1: 30,
@@ -2734,7 +2735,7 @@ module.exports = {
 			'*': { noRetry: true },
 			0: {
 				abnormalChains: { 10151131: 31 },
-				noInterrupt: ['6-31', 19, 21, 23],
+				noInterrupt: ['6-0', '6-31', 19, 21, 23],
 				interruptibleWithAbnormal: { 10151131: [19, 21, 23] },
 				chains: {
 					1: 30,
@@ -2874,8 +2875,7 @@ module.exports = {
 		},
 		12: { // Shadow Burst
 			0: {
-				//noInterrupt: [1, 3, 4, 5, 6, 8, 9, 10, 11, '12-1', '12-31', 13, 14, 15, 18, 20, 21, 23],
-				noInterrupt: [1, 3, '4-0', '4-30', '4-40', '4-60', 5, 6, 8, 9, 10, 11, 20],
+				noInterrupt: [1, 3, 4, 5, 6, 8, 9, 10, 11, '12-1', '12-31', 13, 14, 15, 18, 20, 21, 23],
 				interruptibleWithAbnormal: { 10151250: [1, 3, 4, 5, 6, 8, 9, 10, 11, 13, 14, 15, 18, 20, 21, 23] },
 				abnormalChains: { 10151250: 31 },
 				chains: { 12: 1 }
