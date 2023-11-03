@@ -220,7 +220,7 @@ module.exports = {
 		},
 		37: { // Blade Draw (Deadly Gamble)
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				consumeAbnormal: [102010, 104110]
 			},
 			0: {
@@ -265,7 +265,7 @@ module.exports = {
 					104101: 810
 				},
 				noInterrupt: ['40-10', '40-20', '41-0', '41-30', 42],
-				hasChains: true,
+				//hasChains: true,
 				longRetry: true,
 				cooldownEnd: 1250,
 				consumeAbnormal: 104100
@@ -289,7 +289,7 @@ module.exports = {
 			'*': {
 				noInterrupt: ['41-31', 42],
 				noRetry: true,
-				hasChains: true,
+				//hasChains: true,
 				abnormalChains: { 105100: 31 }
 			},
 			0: {
@@ -585,7 +585,7 @@ module.exports = {
 				noInterrupt: [4],
 				forceClip: true,
 				noRetry: true,
-				hasChains: true
+				//hasChains: true
 			},
 			0: { abnormalChains: { 301200: 30 } },
 			30: { consumeAbnormal: 301200 }
@@ -762,7 +762,7 @@ module.exports = {
 		27: { // Savage Strike
 			'*': {
 				noInterrupt: ['27-30', '27-41', '27-51'],
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true
 			},
 			0: {
@@ -3000,7 +3000,7 @@ module.exports = {
 				},
 				consumeAbnormal: [10152000, 10152010],
 				consumeAbnormalEnd: 93910009,
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true
 			},
 			1: true,
@@ -3047,7 +3047,7 @@ module.exports = {
 						distance: 0.6
 					}
 				},
-				hasChains: true,
+				//hasChains: true,
 				categoryChains: {
 					91002: 30,
 					91004: 30,
@@ -3266,7 +3266,7 @@ module.exports = {
 		11: { // Rocket Jump
 			'*': {
 				noInterrupt: [11, 15, 20],
-				hasChains: true,
+				//hasChains: true,
 				categoryChains: {
 					91002: 30,
 					91003: 30,
@@ -3442,7 +3442,7 @@ module.exports = {
 		41: { // Modular Weapon System
 			'*': {
 				ignoreAttackSpeed: true,
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [20, 41],
 				cooldownEnd: 300
 			},
@@ -3504,7 +3504,7 @@ module.exports = {
 		43: { // Remote Trigger
 			'*': {
 				moveDir: 1,
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true,
 				cooldownEnd: 500
 			},
@@ -3606,7 +3606,7 @@ module.exports = {
 				noInterrupt: [20, 47],
 				cooldownEnd: 300,
 				moveDir: 1,
-				hasChains: true,
+				//hasChains: true,
 				categoryChains: {
 					91002: 30,
 					91003: 30,
@@ -3638,7 +3638,7 @@ module.exports = {
 				noInterrupt: ['1-3'],
 				triggerAbnormal: { 10153060: 3000 },
 				consumeAbnormalEnd: 10153060,
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true
 			},
 			0: {
@@ -3687,7 +3687,7 @@ module.exports = {
 		},
 		2: { // Counter
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true
 			},
 			1: {
@@ -3739,7 +3739,7 @@ module.exports = {
 		},
 		4: { // Ground Pound
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [4]
 			},
 			0: { categoryChains: { 800: 30 } },
@@ -3753,7 +3753,7 @@ module.exports = {
 		},
 		6: { // Haymaker
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				cooldownEnd: 400,
 				abnormalChains: { 31120: 31 }
 			},
@@ -3803,7 +3803,7 @@ module.exports = {
 		},
 		8: { // Piledriver
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				abnormalChains: { 31120: 31 }
 			},
 			1: { categoryChains: { 800: 30 } },
@@ -3815,7 +3815,7 @@ module.exports = {
 			'*': {
 				noInterrupt: [9],
 				ignoreAttackSpeed: true,
-				hasChains: true,
+				//hasChains: true,
 				abnormalChains: { 31120: 31 }
 			},
 			1: { categoryChains: { 800: 30 } },
@@ -3849,7 +3849,7 @@ module.exports = {
 		},
 		14: { // Infuriate
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				cooldownEnd: 300,
 				noInterrupt: [14]
 			},
@@ -3860,7 +3860,7 @@ module.exports = {
 		15: { // High Kick
 			'*': {
 				requiredBuff: 10153503,
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [15]
 			},
 			0: { categoryChains: { 800: 30 } },
@@ -3919,7 +3919,7 @@ module.exports = {
 		24: { // One-Inch Punch
 			'*': {
 				noInterrupt: [24],
-				hasChains: true,
+				//hasChains: true,
 				abnormals: { 10153540: { speed: 1.2 } }
 			},
 			1: { categoryChains: { 800: 30 } },
@@ -3929,7 +3929,7 @@ module.exports = {
 		},
 		26: { // Rythmic Blows
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true,
 				noInterrupt: [26]
 			},
@@ -3965,7 +3965,7 @@ module.exports = {
 			'*': {
 				ignoreAttackSpeed: true,
 				forceClip: true,
-				hasChains: true,
+				//hasChains: true,
 				abnormalChains: { 10153150: 30 },
 				noRetry: true
 			},
@@ -3981,7 +3981,7 @@ module.exports = {
 			'*': {
 				ignoreAttackSpeed: true,
 				triggerAbnormal: { 10154000: 1650 },
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true
 			},
 			0: { categoryChains: { 900: 30 } },
@@ -4012,7 +4012,7 @@ module.exports = {
 		},
 		3: { // Leaves on the Wind
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [3],
 				abnormalChains: { 10154352: 40 }
 			},
@@ -4074,7 +4074,7 @@ module.exports = {
 					32033: { speed: 1.2 },
 					32058: { speed: 1.3 }
 				},
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true
 			},
 			0: { categoryChains: { 900: 30 } },
@@ -4110,7 +4110,7 @@ module.exports = {
 		},
 		12: { // Skyfall
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [12]
 			},
 			1: { categoryChains: { 900: 30 } },
@@ -4119,7 +4119,7 @@ module.exports = {
 		},
 		13: { // Circle of Steel
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [13]
 			},
 			1: { categoryChains: { 900: 30 } },
@@ -4128,7 +4128,7 @@ module.exports = {
 		},
 		14: { // Double Cut
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [14]
 			},
 			1: { categoryChains: { 900: 30 } },
@@ -4164,7 +4164,7 @@ module.exports = {
 		16: { // Death Blossom
 			'*': {
 				ignoreAttackSpeed: true,
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [16]
 			},
 			0: { categoryChains: { 900: 30 } },
@@ -4172,7 +4172,7 @@ module.exports = {
 		},
 		17: { // Attunement
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [17],
 				cooldownEnd: 300
 			},
@@ -4181,7 +4181,7 @@ module.exports = {
 		},
 		18: { // Bladestorm
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [18]
 			},
 			0: { categoryChains: { 900: 30 } },
@@ -4189,7 +4189,7 @@ module.exports = {
 		},
 		19: { // Chakra Thrust
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [19]
 			},
 			0: { categoryChains: { 900: 30 } },
@@ -4200,7 +4200,7 @@ module.exports = {
 		},
 		21: { // Boomerang Shuriken
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
 				interruptibleWithAbnormal: { 10154351: [1, 5, 6, 7, 12, 14, 18, 22] },
 			},
@@ -4239,7 +4239,7 @@ module.exports = {
 		},
 		23: { // Inner Harmony
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [23],
 				cooldownEnd: 300
 			},
@@ -4251,7 +4251,7 @@ module.exports = {
 		1: { // Slash
 			'*': {
 				noInterrupt:  ['1-3', 9, 11, 19],
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true
 			},
 			0: {
@@ -4275,7 +4275,7 @@ module.exports = {
 		},
 		2: { // Overhead Slash
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [2]
 			},
 			0: { categoryChains: { 750: 30 } },
@@ -4283,7 +4283,7 @@ module.exports = {
 		},
 		3: { // Glaive Strike
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [3],
 				requiredBuff: 10155113,
 				consumeAbnormal: [10155112, 10155113]
@@ -4305,7 +4305,7 @@ module.exports = {
 		},
 		5: { // Maelstrom
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [5]
 			},
 			0: { categoryChains: { 750: 30 } },
@@ -4313,7 +4313,7 @@ module.exports = {
 		},
 		6: { // Leaping Strike
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [6]
 			},
 			0: { categoryChains: { 750: 30 } },
@@ -4322,7 +4322,7 @@ module.exports = {
 		7: { // Spinning Death
 			'*': {
 				noInterrupt: ['7-2'],
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true
 			},
 			0: {
@@ -4341,7 +4341,7 @@ module.exports = {
 		},
 		8: { // Titansbane
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: ['8-1']
 			},
 			0: {
@@ -4356,7 +4356,7 @@ module.exports = {
 		},
 		9: { // Ground Bash
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [9],
 				requiredBuff: 10155112,
 				consumeAbnormal: [10155112, 10155113]
@@ -4367,7 +4367,7 @@ module.exports = {
 		10: { // Dream Slash
 			'*': {
 				noInterrupt: [10],
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true
 			},
 			0: { categoryChains: { 750: 30 } },
@@ -4386,7 +4386,7 @@ module.exports = {
 		},
 		12: { // Ragnarok
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [12]
 			},
 			0: { categoryChains: { 750: 30 } },
@@ -4394,7 +4394,7 @@ module.exports = {
 		},
 		13: { // Bloodflower
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [13]
 			},
 			0: { categoryChains: { 750: 30 } },
@@ -4413,7 +4413,7 @@ module.exports = {
 		},
 		15: { // Windslash
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [15]
 			},
 			0: { categoryChains: { 750: 30 } },
@@ -4422,7 +4422,7 @@ module.exports = {
 		16: { // Runeburst
 			'*': {
 				ignoreAttackSpeed: true,
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [16]
 			},
 			0: { categoryChains: { 750: 30 } },
@@ -4442,7 +4442,7 @@ module.exports = {
 		},*/
 		19: { // Reclamation
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noInterrupt: [19]
 			},
 			0: { categoryChains: { 750: 30 } },
@@ -4462,7 +4462,7 @@ module.exports = {
 		},
 		23: { // Gungir's Bite
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true,
 				abnormals: { 10155531: { disableSkill: true } },
 				triggerAbnormal: { 10155532: 2000 },
@@ -4491,7 +4491,7 @@ module.exports = {
 		24: { // Twilight Waltz
 			'*': {
 				abnormals: { 10155543: { disableSkill: true } },
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true,
 				abnormalChains: {
 					10155540: 2,
@@ -4537,7 +4537,7 @@ module.exports = {
 		},
 		25: { // Godsfall
 			'*': {
-				hasChains: true,
+				//hasChains: true,
 				noRetry: true,
 				//noInterrupt: ['11-0', '11-30', 25]
 			},

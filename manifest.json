@@ -1,7 +1,7 @@
 {
 	"files": {
 		"config/abnormalities.js": "459749c4d324d78e62f1ba888312400b3461a40f0a58717fe6990e1290d9e181",
-		"config/skills.js": "ea076b7845eac6ae2fe2043400fe1f4317f707640cd9dd42f3e376abd9388471",
+		"config/skills.js": "a1bde38d0ab50296c368f98f49027b44f7feea6a99d24cc5f873373b5ed0d25f",
 		"lib/abnormalities.js": "9ce11778db28413532b922e29798d642d0fdebaa3eeb50fc2d61777a462b11c6",
 		"lib/commands.js": "5195fdcbcf66ce26c5c07916df678a5dfc0cdc2ecbbf067f073fd0ac17c8e0df",
 		"lib/cooldowns.js": "6614799be9735debd3ea5b6576673a98505f018acb2ca0c2bf682891f9494747",
