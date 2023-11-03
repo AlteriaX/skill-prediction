@@ -3605,8 +3605,7 @@ module.exports = {
 			'*': {
 				moveDir: 1,
 				//hasChains: true,
-				noRetry: true,
-				cooldownEnd: 500
+				noRetry: true
 			},
 			0: { triggerAbnormal: { 10152331: 1800 } },
 			1: {
@@ -3659,7 +3658,6 @@ module.exports = {
 			},
 			30: { connectSkillArrow: true },
 			31: {
-				forceDelay: 15,
 				longRetry: true,
 				requiredBuff: 10152331,
 				abnormals: { 93910009: { disableSkill: true } },
@@ -3667,7 +3665,6 @@ module.exports = {
 			},
 			50: { connectSkillArrow: true },
 			51: {
-				forceDelay: 15,
 				longRetry: true,
 				requiredBuff: 10152340,
 				abnormals: { 93910009: { disableSkill: true } },
