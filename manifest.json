@@ -1,7 +1,7 @@
 {
 	"files": {
 		"config/abnormalities.js": "459749c4d324d78e62f1ba888312400b3461a40f0a58717fe6990e1290d9e181",
-		"config/skills.js": "3baff0b16e67a23110269f6a4e14357aeeb10302297366b3728c00743469030b",
+		"config/skills.js": "ea076b7845eac6ae2fe2043400fe1f4317f707640cd9dd42f3e376abd9388471",
 		"lib/abnormalities.js": "9ce11778db28413532b922e29798d642d0fdebaa3eeb50fc2d61777a462b11c6",
 		"lib/commands.js": "5195fdcbcf66ce26c5c07916df678a5dfc0cdc2ecbbf067f073fd0ac17c8e0df",
 		"lib/cooldowns.js": "6614799be9735debd3ea5b6576673a98505f018acb2ca0c2bf682891f9494747",
@@ -13,7 +13,7 @@
 		"lib/require.js": "d8fcd57f21ba1cea3d474688c994804b21676c6a4cb6a9dbc4ed929c79a37dac",
 		"migration.js": "a79b946a85c0ba6ebd612ac9df4530a4f49902898596ed147599938b88b6622a",
 		"module.json": "76d484993336cd90a7681b164c6b4c6186717b26d8bbefb077dafb3b273a45bb",
-		"package.json": "f661f14ae53eeae6bdc3f0679f27ce4d336907649eca15eba6725703a01fb0a9",
+		"package.json": "23adb8176b81e3fcebcc6a29ad1a2d456e12b9b3bb8c1e359087ebe8a48d747e",
 		"client_data/abnormality.json": "d2b4aab09677d0059fae5855546e98fba90d08edb2bc16dc81911ba0df3d11b2",
 		"client_data/ep.json": "c853bc7b2672d94134243269b334983ba44a288cec248653796d69bf28535748",
 		"client_data/noctan.json": "b7bf4bc91a06ee3563fd839622551894070e8d3d987973e07bbe7c9a71a4b5b3",
