@@ -3174,7 +3174,7 @@ module.exports = {
 		},
 		7: { // Arcane Barrage
 			'*':{
-				triggerAbnormal: { 10152010: 3100 },
+				triggerAbnormal: { 10152011: 3100 },
 				noInterrupt: [7, 20]
 			},
 			1: {
@@ -3187,8 +3187,8 @@ module.exports = {
 			},
 			3: {
 				forceDelay: 15,
-				requiredBuff: 10152040,
-				triggerAbnormal: { 10152081: 4100 },
+				//requiredBuff: 10152040,
+				//triggerAbnormal: { 10152081: 4100 },
 				noInterrupt: ['7-3']
 			},
 			31: {
@@ -3201,8 +3201,8 @@ module.exports = {
 			},
 			33: {
 				forceDelay: 15,
-				requiredBuff: 10152040,
-				triggerAbnormal: { 10152081: 4100 },
+				//requiredBuff: 10152040,
+				//triggerAbnormal: { 10152081: 4100 },
 				noInterrupt: ['7-33']
 			}
 		},
@@ -3553,19 +3553,19 @@ module.exports = {
 					91044: 50,
 					91047: 50
 				},
-				requiredBuff: 10152340,
+				//requiredBuff: 10152340,
 				abnormalChains: { 10152331: 51 },
 				triggerAbnormal: { 10152331: 1800 }
 			},
 			30: { connectSkillArrow: true },
 			31: {
-				requiredBuff: 10152331,
+				//requiredBuff: 10152331,
 				//abnormals: { 93910009: { disableSkill: true } },
 				consumeAbnormal: [10152000, 10152010, 10152011, 10152331]
 			},
 			50: { connectSkillArrow: true },
 			51: {
-				requiredBuff: 10152340,
+				//requiredBuff: 10152340,
 				//abnormals: { 93910009: { disableSkill: true } },
 				consumeAbnormal: [10152000, 10152010, 10152011, 10152331]
 			}
@@ -3602,7 +3602,7 @@ module.exports = {
 		},
 		47: { // Obliteration
 			'*': {
-				requiredBuff: 10152340,
+				//requiredBuff: 10152340,
 				noInterrupt: [20, 47],
 				cooldownEnd: 300,
 				moveDir: 1,
