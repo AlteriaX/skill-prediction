@@ -7,7 +7,7 @@ Not sure if there's much changes after a few patches when I quit back then.
 Class tested on Menma's server:
 - Archer: Not tested
 - Berserker: Tested, works fine
-- Brawler: Not tested
+- Brawler: Tested, works fine
 - Gunner: Tested, works fine
 - Lancer: Tested, works fine
 - Mystic: Not tested
